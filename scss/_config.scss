@@ -1,0 +1,24 @@
+$font-stack: 'Inter', sans-serif;;
+$background-main: hsl(233, 47%, 7%);
+$background-card: hsl(244, 38%, 16%);
+$background-accent: hsl(277, 64%, 61%);
+$font-main-color: hsl(0, 0%, 100%);
+$font-paragraph-color: hsla(0, 0%, 100%, 0.75);
+$font-stats-heading: hsla(0, 0%, 100%, 0.6);
+
+@mixin setDisplay($prop1, $prop2, $prop3) {
+    display: $prop1;
+    align-items: $prop2;
+    background-color: $prop3;
+}
+
+@mixin textPropertyDesktop($prop1, $prop2, $prop3) {
+    font-size: $prop1;
+    font-weight: $prop2;
+    color: $prop3;
+}
+
+@mixin fontPropertyMobile($prop1, $prop2) {
+    font-size: $prop1;
+    text-align: $prop2;
+}

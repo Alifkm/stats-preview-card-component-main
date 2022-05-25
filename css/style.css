@@ -1,0 +1,157 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: "Inter", sans-serif;
+  height: 100%;
+}
+
+html .container, body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  background-color: #090b1a;
+}
+
+html .container .header-mobile, body .container .header-mobile {
+  display: none;
+}
+
+html .container .wrapper, body .container .wrapper {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1b1938;
+  width: 1000px;
+  border-radius: 7px;
+}
+
+html .container .wrapper-content, body .container .wrapper-content {
+  width: 500px;
+  height: 400px;
+}
+
+html .container .wrapper-content h1, body .container .wrapper-content h1 {
+  margin: 70px 100px 20px 70px;
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+}
+
+html .container .wrapper-content span, body .container .wrapper-content span {
+  color: #aa5cdb;
+}
+
+html .container .wrapper-content h2, body .container .wrapper-content h2 {
+  margin: 20px 100px 20px 70px;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 24px;
+}
+
+html .container .wrapper-content div, body .container .wrapper-content div {
+  margin: 70px 100px 20px 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html .container .wrapper-content h3, body .container .wrapper-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  line-height: 24px;
+}
+
+html .container .wrapper-content p, body .container .wrapper-content p {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+html .container .wrapper img, body .container .wrapper img {
+  border-radius: 0 7px 7px 0;
+  -webkit-filter: grayscale(100%) brightness(50%) sepia(40%) hue-rotate(-100deg) saturate(500%) contrast(1);
+          filter: grayscale(100%) brightness(50%) sepia(40%) hue-rotate(-100deg) saturate(500%) contrast(1);
+}
+
+@media only screen and (max-width: 1024px) {
+  html .container, body .container {
+    height: 1280px;
+  }
+  html .container .wrapper, body .container .wrapper {
+    width: 500px;
+  }
+  html .container .wrapper-content, body .container .wrapper-content {
+    height: 100%;
+    padding-bottom: 30px;
+  }
+  html .container .wrapper-content .header-mobile, body .container .wrapper-content .header-mobile {
+    display: block;
+    width: 500px;
+  }
+  html .container .wrapper img, body .container .wrapper img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 524px) {
+  html .container .wrapper, body .container .wrapper {
+    width: 275px;
+  }
+  html .container .wrapper-content, body .container .wrapper-content {
+    height: 100%;
+    padding-bottom: 0;
+  }
+  html .container .wrapper-content .header-mobile, body .container .wrapper-content .header-mobile {
+    display: block;
+    width: 275px;
+  }
+  html .container .wrapper-content h1, body .container .wrapper-content h1 {
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+  html .container .wrapper-content h2, body .container .wrapper-content h2 {
+    margin: 20px 20px 20px 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  html .container .wrapper-content div, body .container .wrapper-content div {
+    margin: 40px 20px 20px 20px;
+    display: block;
+  }
+  html .container .wrapper-content div h3, body .container .wrapper-content div h3 {
+    font-size: 16px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  html .container .wrapper-content div p, body .container .wrapper-content div p {
+    font-size: 12px;
+    text-align: center;
+  }
+  html .container .wrapper img, body .container .wrapper img {
+    display: none;
+  }
+}
+
+html footer, body footer {
+  color: white;
+  background-color: #090b1a;
+}
